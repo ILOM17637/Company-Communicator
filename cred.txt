@@ -1,0 +1,35 @@
+C:\Users\taangra\AppData\Local\Temp\visualstudio-js-debugger.txt
+CC-V3
+
+ClientID - da634898-268f-40cd-a20b-1d6ff527daf6
+Client Secret- nfu8Q~XRIzdfTQS4QN_ABnmQKg4dPA10~5lbocIl
+Tenant ID - 60c3d3e1-3fb0-4cca-b0ba-a93f261237ef
+
+CC-V3 Author
+
+Client ID - 0fb78565-248e-4198-85ea-94dbddf20988
+Tenant ID- 
+Client Secret - gfY8Q~bMYK3uHixyYGiXfpoDsqM3tYP4p0E-8bL_
+
+CC-V3 Graph
+Client ID - de69dcd5-6f44-4e30-a6ff-0096f6fdc956
+Secret - pe48Q~~WtAjXI8HronCTgvzgHPfMGWjn4Hy4vcgC
+
+Prep func az app insights key - @Microsoft.KeyVault(SecretUri=https://ccv3mwvault.vault.azure.net/secrets/ccv3mwvaultAppInsightsKey/558729c782b94c7cad7c9d57acc0ccad)
+
+UserAppExternalID - 148a66bb-e83d-425a-927d-09f4299a9276 (same to add in mainfest)
+
+service namespace error- different basename with differnt GUIs for namespaces
+
+ https://db83-2402-e280-2194-99-e5cb-e507-6424-5303.ngrok.io
+
+command - ngrok http https://localhost:44387 --host-header="localhost:44387"
+
+
+api/groupdata/verifyaccess -- 500 error
+
+working -- customEvents| extend notificationId = "2517387060934473169" | where name == 'TrackUrl'  and notificationId == '2517387060934473169'
+
+customEvents| extend notificationId = "2517387060934473169", userId = "tostring(customDimensions['userId'])"| where name == 'TrackUrl'  and notificationId == '2517387060934473169' | summarize Count=dcount(userId) by notificationId
+not working --- count 1
+

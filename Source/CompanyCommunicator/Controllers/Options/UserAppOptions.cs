@@ -1,0 +1,27 @@
+﻿// <copyright file="UserAppOptions.cs" company="Microsoft">
+// Copyright (c) Microsoft Corporation.
+// Licensed under the MIT License.
+// </copyright>
+
+namespace Microsoft.Teams.Apps.CompanyCommunicator.Controllers.Options
+{
+    /// <summary>
+    /// User app options.
+    /// </summary>
+    public class UserAppOptions
+    {
+        /// <summary>
+        /// Gets or sets a value indicating whether user app should be proactively installed.
+        /// </summary>
+        public bool ProactivelyInstallUserApp { get; set; }
+
+        /// <summary>
+        /// Gets or sets User app's external Id (id in the manifest).
+        /// </summary>
+        public string UserAppExternalId { get; set; }
+        /// <summary>
+        /// Gets or sets a value indicating whether the images should be uploaded to Azure Blob Storage.
+        /// </summary>
+        public bool ImageUploadBlobStorage { get; set; }
+    }
+}
